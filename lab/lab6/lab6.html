@@ -1,0 +1,123 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title> 
+		HTML DOM Anchor Object 
+    </title> 
+    <style>
+        .friends
+        {
+            width: 200px;
+            height:350px;
+
+        }
+    </style>
+</head> 
+	
+<body> 
+	<center> 
+		<h1>Lab6</h1> 
+		
+		<h2>DOM Anchor Object </h2> 
+		
+		<p id = "gfg">Welcome to </p> 
+		
+		<button onclick = "myGeeks()"> 
+			Submit 
+		</button> 
+		
+		<!-- script to describe anchor object -->
+		<script> 
+			function myGeeks() { 
+				
+				/* Create anchor tag */ 
+				var g = document.createElement("A"); 
+				var f = document.createTextNode("rohan's web page"); 
+				g.setAttribute("href", "https://rohan9025.github.io/"); 
+				g.appendChild(f); 
+				document.getElementById("gfg").appendChild(g); 
+			} 
+		</script> 
+    </center> 
+    <center>
+    
+    <h2>DOM document.forms Property</h2> 
+  
+    <!-- form 1 starts from here -->
+    <form id="personal-info"> 
+        <h3>Personal Information Area</h3> 
+        Name: <input type="text"> 
+    </form> 
+    <!-- form 1 ends here -->
+      
+    <!-- form 2 starts from here -->
+    <form id="home-info"> 
+        <h3>Home Address Information Area</h3> 
+        Address: <input type="text"> 
+    </form> 
+    <!-- form 2 ends here -->
+      
+    <!-- form 3 starts from here -->
+    <form id="delivery-info"> 
+        <h3>Delivery Type Area</h3> 
+        Delivery Speed: <input type="text"> 
+    </form> 
+    <!-- form 3 ends here -->
+  
+    <p> 
+     Click the button below to count  
+     the number of forms: 
+    </p> 
+      
+    <button onclick = "countForms()"> 
+     Count forms 
+    </button> 
+  
+    <p> 
+     The total number of forms in 
+     this page is:  
+    </p> 
+      
+    <div class = "count"></div> 
+      
+    <script> 
+        function countForms() { 
+  
+            // Count number of forms 
+            let collection = document.forms.length; 
+            document.querySelector(".count").innerHTML 
+                                      = collection; 
+            var DOM_img = document.createElement("img");
+            DOM_img.src = "https://miro.medium.com/max/3150/1*8212EJwKcRoQoMHgEVLw5Q.jpeg";
+
+            DOM_a.appendChild(DOM_img);
+        }  
+    </script> 
+    <div id="demo"></div>
+
+    <script>
+    var txt = "";
+    txt += "<p>Browser CodeName: " + navigator.appCodeName + "</p>";
+    txt += "<p>Browser Name: " + navigator.appName + "</p>";
+    txt += "<p>Browser Version: " + navigator.appVersion + "</p>";
+    txt += "<p>Cookies Enabled: " + navigator.cookieEnabled + "</p>";
+    txt += "<p>Browser Language: " + navigator.language + "</p>";
+    txt += "<p>Browser Online: " + navigator.onLine + "</p>";
+    txt += "<p>Platform: " + navigator.platform + "</p>";
+    txt += "<p>User-agent header: " + navigator.userAgent + "</p>";
+    
+    document.getElementById("demo").innerHTML = txt;
+    </script>
+    
+    <img class="friends" src="https://miro.medium.com/max/3150/1*8212EJwKcRoQoMHgEVLw5Q.jpeg">
+    <img class="friends" src ="https://avatars3.githubusercontent.com/u/42229673?s=460&v=4">
+
+    </center>
+    
+
+
+    
+</body> 
+
+</html>								 
